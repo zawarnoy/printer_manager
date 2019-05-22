@@ -1,4 +1,4 @@
-package src.modules.server.core.events;
+package src.server.core.events.client;
 
 import org.springframework.context.ApplicationEvent;
 

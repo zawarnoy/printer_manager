@@ -1,4 +1,4 @@
-package src.modules.server.core;
+package src.server.core;
 
 public class ServerParameters {
 

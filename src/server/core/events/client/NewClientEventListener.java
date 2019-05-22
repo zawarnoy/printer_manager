@@ -1,9 +1,9 @@
-package src.modules.server.core.events;
+package src.server.core.events.client;
 
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
-import src.modules.server.core.ClientHandler;
-import src.modules.server.exception.handler.ServerIOExceptionHandler;
+import src.server.core.ClientHandler;
+import src.server.exception.handler.ServerIOExceptionHandler;
 
 import java.io.IOException;
 import java.net.Socket;
@@ -17,6 +17,7 @@ public class NewClientEventListener implements ApplicationListener<NewClientEven
         // про многопоточность https://javarush.ru/groups/posts/1992-mnogopotochnostjh-v-java-sutjh-pljusih-i-chastihe-lovushki-
         Socket socket = newClientEvent.getSocket();
         try {
+            // обработчик
             new ClientHandler(socket);
         } catch (IOException e) {
             (new ServerIOExceptionHandler()).handle(e);

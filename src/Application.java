@@ -5,8 +5,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
-import src.modules.server.core.Server;
-import src.modules.server.core.ServerParameters;
+import src.server.core.Server;
+import src.server.core.ServerParameters;
 
 @SpringBootApplication
 public class Application {

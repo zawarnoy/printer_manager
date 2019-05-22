@@ -1,9 +1,9 @@
-package src.modules.server.core;
+package src.server.core;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
-import src.modules.server.core.events.NewClientEvent;
-import src.modules.server.exception.handler.ServerIOExceptionHandler;
+import src.server.core.events.client.NewClientEvent;
+import src.server.exception.handler.ServerIOExceptionHandler;
 
 import java.io.IOException;
 import java.net.ServerSocket;

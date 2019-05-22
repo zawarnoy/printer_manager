@@ -1,6 +1,6 @@
-package src.modules.server.exception.handler;
+package src.server.exception.handler;
 
-import src.modules.exception.ExceptionHandler;
+import src.exception.ExceptionHandler;
 
 public class ServerIOExceptionHandler implements ExceptionHandler {
     @Override
